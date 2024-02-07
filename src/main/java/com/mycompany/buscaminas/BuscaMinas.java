@@ -36,12 +36,12 @@ public class BuscaMinas extends JFrame{
          nombre.setForeground(Color.BLACK);
          nombre.setFont(new Font("arial",1,15));
          panTitulo.add(nombre);
-         JTextField cajaTexto1 = new JTextField(15);
+         JTextField cTexto1 = new JTextField(15);
          
          
          
          JLabel dificultad =  new JLabel("Elige la Dificultad: ");
-         JTextField cajaTexto2 = new JTextField(15);
+         JTextField cTexto2 = new JTextField(15);
      
          dificultad.setForeground(Color.BLACK);
          dificultad.setFont(new Font("arial",1,15));
@@ -50,7 +50,7 @@ public class BuscaMinas extends JFrame{
          
         
          JLabel numMinas =  new JLabel("Numero de minas: ");
-         JTextField cajaTexto3 = new JTextField(15);
+         JTextField cTexto3 = new JTextField(15);
        
          numMinas.setForeground(Color.BLACK);
          numMinas.setFont(new Font("arial",1,15));
@@ -59,8 +59,8 @@ public class BuscaMinas extends JFrame{
          
          
          JButton bot2 = new JButton("Iniciar");
-         JButton bot3 = new JButton("Generar minas");
-         bot3.setMnemonic('b');
+         //JButton bot3 = new JButton("Generar minas");
+         //bot3.setMnemonic('b');
          
          
          dimension.gridx=0;
@@ -69,7 +69,7 @@ public class BuscaMinas extends JFrame{
          
          dimension.gridx=1;
          dimension.gridy=0;
-         panTitulo.add(cajaTexto1, dimension);
+         panTitulo.add(cTexto1, dimension);
          
          dimension.gridx=1;
          dimension.gridy=2;
@@ -79,8 +79,8 @@ public class BuscaMinas extends JFrame{
          dimension.gridy=1;
          panTitulo.add(dificultad, dimension);
          
-         String[] lenguajes = {"Facil", "Normal", "Dicifil"};
-        JComboBox lista = new JComboBox(lenguajes);
+         String[] lDificultad = {"Facil", "Normal", "Dicifil"};
+        JComboBox lista = new JComboBox(lDificultad);
        
          dimension.gridx=1;
          dimension.gridy=1;
@@ -94,9 +94,9 @@ public class BuscaMinas extends JFrame{
          dimension.gridy=4;
          panTitulo.add(bot2, dimension);
          
-         dimension.gridx=1;
-         dimension.gridy=3;
-         panTitulo.add(bot3, dimension);
+      //   dimension.gridx=1;
+        // dimension.gridy=3;
+        // panTitulo.add(bot3, dimension);
          
          
          
